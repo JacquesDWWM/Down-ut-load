@@ -99,6 +99,22 @@ h2{
     font-size: 30px;
     margin: 25px 0 50px 0;
 }
+#container2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    color: #fff;
+}
+#container2 h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+#container2 p {
+    font-size: 26px;
+}
+
+
 /* drag n drop input */
 .drop-container {
     display: flex;
