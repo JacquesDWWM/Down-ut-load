@@ -13,6 +13,7 @@ a{
     text-decoration: none;
     color: #fff;
 }
+@media screen and (min-width: 1024px){
 #main{
     display: flex;
     flex-wrap: wrap;
@@ -178,4 +179,11 @@ input[type=file]::file-selector-button:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+}
+@media screen and (max-width: 1023px) and (min-width:768px){
+
+}
+@media screen and (max-width: 767px) {
+    
 }
