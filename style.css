@@ -163,7 +163,16 @@ input[type=file]::file-selector-button {
 input[type=file]::file-selector-button:hover {
     background: #d64386;
 }
-
+#newUrl{
+    color: #8aba15;
+    cursor: pointer;
+}
+#contentgenurl{
+    color: #fff;
+    height: fit-content;
+    padding-top: 20px;
+    text-align: center;
+}
 #footer{
     display: flex;
     justify-content: center;
