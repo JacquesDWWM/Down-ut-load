@@ -1,5 +1,5 @@
 import { storageRef } from './firebase-config';
-import { uploadBytes, getDownloadURL, ref } from "firebase/storage";
+import { uploadBytes, getDownloadURL, ref } from "./firebase/storage";
 import './style.css'
 import imageUrl from './image/downut.png'
 
