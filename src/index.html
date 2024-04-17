@@ -7,18 +7,38 @@
     <link rel="shortcut icon" href="./image/favicon-256x256.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="index.js" ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div id="main">
+    <ul id="togglemenu">
+        <li><a href="index.html" id="home">HOME</a></li>
+        <li><a href="about.html" id="about">ABOUT</a></li>
+        <li><a href="contact.html" id="contact">CONTACT</a></li>
+    </ul>
         <div id="navbar">
             <div id="logo"></div>
-            <h1>DOWN'ut'<span>LOAD</span></h1>
+            <h1>DOWN'ut'LOAD</h1>
             <ul>
                 <li><a href="index.html" id="home">HOME</a></li>
                 <li><a href="about.html" id="about">ABOUT</a></li>
                 <li><a href="contact.html" id="contact">CONTACT</a></li>
-            
+            </ul>
+            <div id="burgermenu">
+            <input id="burger-toggle" class="burger-checkbox" type="checkbox">
+            <label for="burger-toggle" class="burger">
+                <span class="material-symbols-outlined" id="burgerButton" style="font-size: 50px; color:#fff"; >
+                    menu
+                    </span>
+            </label>
+
         </div>
+        </div>
+        <ul id="togglemenu">
+            <li><a href="index.html" id="home">HOME</a></li>
+            <li><a href="about.html" id="about">ABOUT</a></li>
+            <li><a href="contact.html" id="contact">CONTACT</a></li>
+        </ul>
         <div id="container">
             <h2>Découvrez une nouvelle façon de savourer le partage de vos fichiers avec douceur.</h2>
         <div id="upload">
@@ -31,15 +51,14 @@
             <p id="converText">Cliquez ici pour générer votre url de téléchargement.</p>
             <button id="generate">Générer l'URL</button>
             <p id="uploadStatus"></p>
-            <a href="" download=""></a>
         </div>
         </div>
     </div>
         <div id="footer">
             <ul>
-                <li><a href="https://www.linkedin.com/in/jacques-ducloy-425a792b3/" id="linkedin">LinkedIn</a></li>
-                <li><a href="https://github.com/JacquesDWWM" id="github">GitHub</a></li>
-                <li><a href="https://jacquesdwwm.github.io/portfolio3.0/" id="portfolio">Portfolio</a></li>
+                <li><a href="https://www.linkedin.com/in/jacques-ducloy-425a792b3/" id="linkedin" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/JacquesDWWM" id="github" target="_blank">GitHub</a></li>
+                <li><a href="https://jacquesdwwm.github.io/portfolio3.0/" id="portfolio" target="_blank">Portfolio</a></li>
             </ul>
         </div>
     </div>
