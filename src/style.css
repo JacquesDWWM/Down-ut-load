@@ -50,11 +50,13 @@ a{
 }
 #navbar #logo img{
     width: 150px;
+    order: 1;
 }
 #navbar h1{
     /* margin-left: 50px; */
     color: #fff;
     font-size: 4rem;
+    order: 2;
 }
 #navbar ul{
     display: flex;
@@ -90,7 +92,7 @@ a{
     color: #0cbee8;
     background-color: #fff;
 }
-#navbar #burger-toggle{
+#navbar #burgermenu{
     display: none;
 }
 h2{
@@ -197,163 +199,6 @@ input[type=file]::file-selector-button:hover {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        min-height: auto;
-        height: 100vh;
-        background-color: #e9a950;
-    }
-    #navbar{
-        display: flex;
-        align-items: center;
-        top: 0;
-        width: 100%;
-        height: 150px;
-        background-color: #ff69ad;
-        box-shadow: 0 20px #d64386;
-    }
-    #navbar #logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: 125px;
-    }
-    #navbar #logo img{
-        width: 150px;
-        height: 150px;
-    }
-    #navbar h1{
-        /* margin-left: 50px; */
-        color: #fff;
-        font-size: 4rem;
-        /* margin: 0 50px; */
-    }
-    #navbar ul{
-        display: none;
-    }
-    #togglemenu{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        font-size: 4rem;
-        z-index: 999;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    #navbar #burger-toggle{
-        display: none;
-    }
-    h2{
-        color: #fff;
-        font-size: 2rem;
-        width: 80%;
-        margin: 25px auto 50px;
-        text-align: center;
-    }
-    #container2{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 60%;
-        color: #fff;
-    }
-    #container2 h2{
-        font-size: 2.5rem;
-        margin-top: 50px;
-    }
-    #container2 p {
-        font-size: 1.6rem;
-    }
-    .drop-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        height: 250px;
-        width: 80%;
-        background-color: #fff;
-        margin: auto;
-        padding: 10px 25px;
-        border: 3px dashed #c9883a;
-        color: #000;
-        cursor: pointer;
-    }
-    .drop-title {
-        color: #000;
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    input[type=file] {
-        width: 350px;
-        color: #000;
-        padding: 20px;
-        background-color: #fff;
-        border: 2px solid #ff69ad;
-        transition: border 0.3s ease-in;
-    }
-    input[type=file]:hover{
-        border: 2px solid #d64386;
-    }
-    input[type=file]::file-selector-button {
-        margin-right: 8px;
-        border: none;
-        background: #ff69ad;
-        padding: 8px 12px;
-        color: #fff;
-        cursor: pointer;
-    }
-    input[type=file]::file-selector-button:hover {
-        background: #d64386;
-    }
-    #newUrl{
-        color: #8aba15;
-        cursor: pointer;
-    }
-    #contentgenurl{
-        color: #fff;
-        font-size: 1.5rem;
-        height: fit-content;
-        padding-top: 20px;
-        text-align: center;
-    }
-    #generate{
-        padding: 5px 10px;
-        background-color: #fff;
-        color: #d64386;
-        border: 2px solid #d64386;
-        cursor: pointer;
-    }
-    #footer{
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
-        bottom: 10px;
-        width: 100%;
-        height: 100px;
-        background-color: #c9883a;
-        font-size: 1.5rem;
-    }
-    #footer ul{
-        height: 100%;
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
-@media screen and (max-width: 767px) {
-    body{
-        /* overflow: hidden; */
-    }
-    #main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
         height: 100vh;
         background-color: #e9a950;
         overflow-y: scroll;
@@ -380,56 +225,27 @@ input[type=file]::file-selector-button:hover {
     #navbar #logo img{
         width: 100px;
         height: 100px;
+        order: 1;
     }
     #navbar h1{
         color: #fff;
         font-size: 2rem;
+        order: 2;
     }
     #togglemenu{
         position: absolute;
-        top: 110px;
+        display: flex;
+        top: 100px;
         font-size: 1.5rem;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height: fit-content;
+        height: 50px;
         background-color: #d64386;
         display: none;
     }
     #navbar ul{
-        /* width: 100%; */
-        /* margin: ; */
         display: none;
-        /* display: flex; */
-        /* position: absolute; */
-        /* justify-content: center; */
-    }
-    #navbar ul li{
-        padding: 10px;
-    }
-    #navbar ul li a{
-        color: #fff;
-        list-style: none;
-        text-decoration: none;
-        font-size: 1.5rem;
-        padding: 5px 10px;
-        border: 2px dashed transparent;
-        transition: border 0.2s ease;
-    }
-    #home:hover{
-        border: 2px dashed #e8450c;
-        color: #e8450c;
-        background-color: #fff;
-    }
-    #about:hover{
-        border: 2px dashed #8aba15;
-        color: #8aba15;
-        background-color: #fff;
-    }
-    #contact:hover{
-        border: 2px dashed #0cbee8;
-        color: #0cbee8;
-        background-color: #fff;
     }
     #burger-toggle{
         display: none;
@@ -458,7 +274,8 @@ input[type=file]::file-selector-button:hover {
         font-size: 1.5rem;
         font-weight: 500;
         width: 80%;
-        margin: 25px auto;
+        
+        margin: 50px auto 25px;
         text-align: center;
     }
     #container2{
@@ -527,17 +344,21 @@ input[type=file]::file-selector-button:hover {
         color: #fff;
         font-size: 1.5rem;
         height: fit-content;
-        padding-top: 20px;
+        padding: 25px 0;
         text-align: center;
         margin: auto;
     }
     #generate{
-        margin-top: 25px;
+        margin-top: 2rem;
         padding: 5px 10px;
         background-color: #fff;
         color: #d64386;
         border: 2px solid #d64386;
         cursor: pointer;
+    }
+    #uploadStatus{
+        font-size: 1.2rem;
+        margin-top: 25px;
     }
     #footer{
         display: flex;
@@ -550,9 +371,193 @@ input[type=file]::file-selector-button:hover {
     }
     #footer ul{
         height: 100%;
-        width: 80%;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 767px) {
+    #main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #e9a950;
+        overflow-y: scroll;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        padding: 0 10px;
+        background-color: #ff69ad;
+        box-shadow: 0 20px #d64386;
+    }
+    #navbar #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        width: auto;
+        height: 100px;
+    }
+    #navbar #logo img{
+        width: 100px;
+        height: 100px;
+        order: 1;
+    }
+    #navbar h1{
+        color: #fff;
+        font-size: 2rem;
+        order: 2;
+    }
+    #togglemenu{
+        position: absolute;
+        display: flex;
+        top: 100px;
+        font-size: 1.5rem;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: #d64386;
+        display: none;
+    }
+    #navbar ul{
+        display: none;
+    }
+    #burger-toggle{
+        display: none;
+    }
+    .burger{
+        cursor: pointer;
+    }
+    #burgermenu{
+        z-index: 9;
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    .material-symbols-outlined {
+    display: flex;
+    z-index: 3;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+    h2{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 80%;
+        
+        margin: 50px auto 25px;
+        text-align: center;
+    }
+    #container2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+        color: #fff;
+    }
+    #container2 h2{
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    #container2 p {
+        font-size: 1.6rem;
+    }
+    .drop-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 200px;
+        width: 80%;
+        background-color: #fff;
+        margin: auto;
+        padding: 10px 25px;
+        border: 3px dashed #c9883a;
+        color: #000;
+        cursor: pointer;
+    }
+    .drop-title {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    input[type=file] {
+        width: auto;
+        color: #000;
+        padding: 20px;
+        background-color: #fff;
+        border: 2px solid #ff69ad;
+        transition: border 0.3s ease-in;
+    }
+    input[type=file]:hover{
+        border: 2px solid #d64386;
+    }
+    input[type=file]::file-selector-button {
+        margin-right: 8px;
+        border: none;
+        background: #ff69ad;
+        padding: 8px 12px;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type=file]::file-selector-button:hover {
+        background: #d64386;
+    }
+    #newUrl{
+        color: #8aba15;
+        cursor: pointer;
+    }
+    #contentgenurl{
+        width: 80%;
+        color: #fff;
+        font-size: 1.5rem;
+        height: fit-content;
+        padding: 25px 0;
+        text-align: center;
+        margin: auto;
+    }
+    #generate{
+        margin-top: 2rem;
+        padding: 5px 10px;
+        background-color: #fff;
+        color: #d64386;
+        border: 2px solid #d64386;
+        cursor: pointer;
+    }
+    #uploadStatus{
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
+    #footer{
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        width: 100%;
+        height: 70px;
+        background-color: #c9883a;
+        font-size: 1.3rem;
+    }
+    #footer ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }
